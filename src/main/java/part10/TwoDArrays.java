@@ -15,15 +15,20 @@ package part10;
 
 public class TwoDArrays {
     public static void main(String[] args) {
-
+        // another string array but like a double string array to make a parking lot
         String[][] cars = {
+                // the values in the array, there are 9 total
                 {"Camaro", "Corvette", "Silverado"},
                 {"Mustang", "Ranger", "F-150"},
                 {"Ferrari", "Lambo", "Tesla"}};
-
+        // the for loop to read in all the array values starting from 0 which is the first value
         for (int i = 0; i < cars.length; i++) {
+            // prinitng out a new line
             System.out.println();
+            // another for loop that reads the cars in the array at i and printing them out based
+            // upon their position which is what leads to the structure of the array
             for (int j = 0; j < cars[i].length; j++) {
+                // prints out the cars together in the structure wanted
                 System.out.println(cars[i][j] + " ");
             }
         }
