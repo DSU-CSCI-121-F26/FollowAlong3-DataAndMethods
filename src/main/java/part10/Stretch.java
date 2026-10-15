@@ -9,5 +9,71 @@ package part10;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+
+        int[] nums = {4, 8, 15, 16};
+        /*
+        these lines will print out, "8" and "4"
+         */
+        System.out.println(nums[1]);
+        System.out.println(nums.length);
+        nums[0] = nums[3] + 1;
+        /*
+        I'm pretty sure this will print out 17
+        and this second sout just outputs 4
+         */
+        // correct
+        System.out.println(nums[0]);
+        /*
+        this reads the array backwards and prints it out in descending order if I remember correctly
+        outputting like, 16 15 8 4
+         */
+        // was correct just forget that we permanently changed the value at 0 in the arrays index
+        for (int i = nums.length - 1; i >= 0; i--) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}};
+        /*
+        a new line was outputted but then the first sout will output the second array and then first array
+        and the second sout will list out the length and say 2 rows and then say 2 columns
+         */
+        // first answer just wrong
+        // second answer 1/2 way there
+        System.out.println(grid[1][0]);
+        System.out.println(grid.length + " rows, " + grid[0].length + " columns");
+
+        System.out.println();
+
+        String[] foods = {"Donuts", "Rice", "Tacos"};
+
+        for (int i = 0; i < foods.length; i++) {
+            System.out.println("I like " + foods[i]);
+        }
+
+        int[] scores = {88, 92, 75, 100, 64};
+        int sum = 0;
+        for (int i = 0; i < scores.length; i++) {
+            sum += scores[i];
+        }
+        double average = (double) sum / scores.length;
+
+        System.out.println("Total: " + sum);
+        System.out.println("Average: " + average);
+
+        String[][] seats = {
+                {"Ana", "Ben", "Cal"},
+                {"Dee", "Eli", "Fay"}};
+
+        for (int i = 0; i < seats.length; i++) {
+            System.out.print("Row " + (i + 1) + ":\t");
+            for (int j = 0; j < seats[i].length; j++) {
+                System.out.print(seats[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+
+    }
 
 }
