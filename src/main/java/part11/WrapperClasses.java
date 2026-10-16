@@ -16,22 +16,28 @@ package part11;
 
 public class WrapperClasses {
     public static void main(String[] args) {
-
+        // a boolean declared value that is automatically set to true
         Boolean a = true;
+        // a char value being the at sign
         Character b = '@';
+        // an integer assigned value that is 123
         Integer c = 123;
+        // a double assigned value that is 3.14
         Double d = 3.14;
+        // a string value that is declared as "Bro"
         String e = "Bro";
-
+        // an if statement that souts This is true if the boolean a is equal to like to the exact to true
         if (a == true) {
             System.out.println("This is true");
         }
-
+        // if the char value is equal to the exact of the @ symbol it will also sout this is true
         if (b == '@') {
             System.out.println("This is true");
         }
-
+        // this just adds one to the int value c and that makes it 124
         System.out.println(c + 1);
+        // this multiplies the double which is the shortened version of pi following its same format with
+        // 2 values after the decimal and it souts 6.28
         System.out.println(d * 2);
 
 
