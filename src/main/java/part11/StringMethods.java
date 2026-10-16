@@ -18,35 +18,36 @@ import java.util.Locale;
 
 public class StringMethods {
     public static void main(String[] args) {
-
+        // declaring a refernce type string with the value of bro
         String name = "Bro";
-
+        // declaring a boolean to sout either true or false based if the name is equal to bro and it does so it souts true
         boolean equalsResult = name.equalsIgnoreCase("bro");
         System.out.println(equalsResult);
-
+        // declaring an int to find the length of bro which is 3 bc length starts at 1
         int lengthResult = name.length();
         System.out.println(lengthResult);
-
+        // finding the letter stored at said index value which is B
         char charResult = name.charAt(0);
         System.out.println(charResult);
-
+        // this does the opposite of above which sends the index value of the letter and for o it would be 2bc it starts at 0
         int indexResult = name.indexOf("o");
         System.out.println(indexResult);
-
+        // souts true or false dependent on if the string value is empty so for this instance it would be false
         boolean emptyResult = name.isEmpty();
         System.out.println(emptyResult);
-
+        // this capitalizes everything in string value sout "BRO"
         String upperResult = name.toUpperCase();
         System.out.println(upperResult);
-
+        // this lower cases everything in the string so it would be all just "bro"
         String lowerResult = name.toLowerCase();
         System.out.println(lowerResult);
-
+        // the first time it just souts out "[     bro    ]"
+        // so this string is spaced so when they trim it takes off all the trimmed space will be deleted and it would be "[Bro]"
         String spaced = "   Bro    ";
         String trimResult = spaced.trim();
         System.out.println("[" + spaced + "]");
         System.out.println("[" + trimResult + "]");
-
+        // the replacement replaces a char with a new char so the sout will be "bra"
         String replaceResult = name.replace('o', 'a');
         System.out.println(replaceResult);
 
