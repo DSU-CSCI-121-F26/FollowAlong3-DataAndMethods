@@ -15,5 +15,26 @@ package part11;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class WrapperClasses {
+    public static void main(String[] args) {
+
+        Boolean a = true;
+        Character b = '@';
+        Integer c = 123;
+        Double d = 3.14;
+        String e = "Bro";
+
+        if (a == true) {
+            System.out.println("This is true");
+        }
+
+        if (b == '@') {
+            System.out.println("This is true");
+        }
+
+        System.out.println(c + 1);
+        System.out.println(d * 2);
+
+
+    }
 
 }
