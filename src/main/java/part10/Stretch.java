@@ -9,5 +9,72 @@ package part10;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+        /* MY GUESS:
+        //8
+        //4
+        //Errpr Array out of bounds //wrong I thought it moved to the next array
+        //4
+        //print backwards //wrong i forgot the new [0] change to 17
+        //4
+        //2 rows , 3 columns
+         */
+        int[] nums = {4, 8, 15, 16};
+        System.out.println(nums[1]);
+        System.out.println(nums.length);
+        nums[0] = nums[3] + 1;
+        System.out.println(nums[0]);
+        for (int i = nums.length - 1; i >= 0; i--) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(grid[1][0]);
+        System.out.println(grid.length + " rows, " + grid[0].length + " columns");
+
+        //Stretch B
+        String[] foods = {"Pizza","Shrimp","Steak"};
+        for (int i = 0; i < foods.length; i++){
+            System.out.println("I like "+ foods[i]);
+        }
+
+        //Stretch B2
+        int[] scores = {88, 92, 75, 100, 64};
+
+        int sum = 0;
+
+
+        for (int i = 0; i < scores.length; i++) {
+            sum += scores[i];
+        }
+
+
+        double average = (double) sum / scores.length;
+
+        System.out.println("Total: " + sum);
+        System.out.println("Average: " + average);
+
+        //Stretch B3
+        String[][] seats = {
+                {"Ana", "Ben", "Cal"},
+                {"Dee", "Eli", "Fay"}
+        };
+        // Loop through each row
+        for (int row = 0; row < seats.length; row++) {
+
+            // Print the row label (row + 1 because humans count from 1)
+            System.out.print("Row " + (row + 1) + ":\t");
+
+            // Loop through each column in the current row
+            for (int col = 0; col < seats[row].length; col++) {
+
+                // Print the name followed by a tab
+                System.out.print(seats[row][col] + "\t");
+            }
+
+            // Move to the next line after finishing the row
+            System.out.println();
+        }
+    }
 
 }
