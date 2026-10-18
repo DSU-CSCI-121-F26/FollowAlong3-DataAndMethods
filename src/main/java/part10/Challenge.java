@@ -34,3 +34,6 @@ public class Challenge {
         return sum;   // YOUR CODE
     }
 }
+//Started on 10-17
+//Finished on 10-17
+//The line that took me the longest is the nested for loops for the rows
