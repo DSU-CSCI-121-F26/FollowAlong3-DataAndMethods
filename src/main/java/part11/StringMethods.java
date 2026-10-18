@@ -15,5 +15,30 @@ package part11;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class StringMethods {
+    public static void main(String[] args) {
+        String name = "Bro";
+        boolean ignoreResult = name.equalsIgnoreCase("bro");
+        System.out.println(ignoreResult);
+        boolean equalsResult = name.equals("bro");
+        System.out.println(equalsResult);
+        int lengthResult = name.length();
+        System.out.println(lengthResult);
+        char charResult = name.charAt(0);
+        System.out.println(charResult);
+        int indexResult = name.indexOf("o");
+        System.out.println(indexResult);
+        boolean emptyResult = name.isEmpty();
+        System.out.println(emptyResult);
+        String upperResult = name.toUpperCase();
+        System.out.println(upperResult);
 
+        String lowerCaseResult = name.toLowerCase();
+        System.out.println(lowerCaseResult);
+        String spaced = "   Bro   ";
+        String trimResult = spaced.trim();
+        System.out.println("[" + spaced + "]");
+        System.out.println("[" + trimResult + "]");
+        String replaceResult = name.replace('o', 'a');
+        System.out.println(replaceResult);
+    }
 }
