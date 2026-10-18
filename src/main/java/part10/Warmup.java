@@ -13,5 +13,14 @@ package part10;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
+    public static void main(String[] args) {
+        int sum = 0;
+        int i = 1;
+        while (i <= 10){
+            sum = sum + i;
+            i++;
+        }
+        System.out.println("Sum:"+sum);
 
+    }
 }
