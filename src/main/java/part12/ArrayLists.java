@@ -1,4 +1,5 @@
 package part12;
+import java.util.ArrayList;
 
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=7922s
 //        starts at about 2:12:02 — stop at about 2:16:20, when he says "that is ArrayLists in Java"
@@ -15,5 +16,27 @@ package part12;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ArrayLists {
+    public static void main(String[] args) {
+
+        ArrayList<String> food = new ArrayList<String>();
+
+        food.add("pizza");
+        food.add("hamburger");
+        food.add("hotdog");
+
+        for (int i = 0; i < food.size(); i++) {
+            System.out.println(food.get(i));
+        }
+
+        food.set(0, "sushi");
+        System.out.println(food);
+
+        food.remove(2);
+        System.out.println(food);
+
+        food.clear();
+        System.out.println(food);
+
+    }
 
 }
