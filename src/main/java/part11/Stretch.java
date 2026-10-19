@@ -9,5 +9,53 @@ package part11;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+        /* MY GUESS:
+        4
+        a
+        2
+        JAVA
+        jovo
+        false
+        true
+        Java
+
+         */
+        String word = "Java";
+        System.out.println(word.length());
+        System.out.println(word.charAt(1));
+        System.out.println(word.indexOf("v"));
+        System.out.println(word.toUpperCase());
+        System.out.println(word.replace('a', 'o'));
+        System.out.println(word.equals("java"));
+        System.out.println(word.equalsIgnoreCase("java"));
+        System.out.println(word);
+
+        //B1
+        String city = "  Dover  ";
+        String clean = city.trim();
+        System.out.println(clean.toUpperCase());
+        System.out.println(clean.length());
+        System.out.println(clean.charAt(0));
+
+        //B2
+        Integer apples = 5;
+        Integer oranges = 10;
+        int fruit = apples+oranges;
+         Double price = 9.99;
+         Boolean isOpen = true;
+
+        System.out.println("Fruit: "+fruit);
+        System.out.println("Two cost: "+(price*2));
+        if (isOpen){
+            System.out.println("The store is open");
+        }
+        //B3
+        String first = "Lu-kee";
+        String last = "Tucker";
+        String username = ""+first.toLowerCase().charAt(0)+last.toLowerCase();
+        System.out.println(username);
+        System.out.println(username+"@desu.edu");
+    }
 
 }
