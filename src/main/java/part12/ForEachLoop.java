@@ -16,20 +16,26 @@ import java.util.ArrayList;
 
 public class ForEachLoop {
     public static void main(String[] args) {
-
+        // the regular way many people write out an array
         String[] animals = {"cat", "dog", "rat", "bird"};
-
+        // a way to read an array from 0 to whenever it ends in a for loop
         for (String i : animals) {
+            // printing out all the values on a new line after each iteration of the loop is ran
             System.out.println(i);
         }
-
+        // the way to write an array with the import way and stuff
         ArrayList<String> animalList = new ArrayList<String>();
+        // adding cat to the animal list first
         animalList.add("cat");
+        // adding dog to the animal list 2nd value
         animalList.add("dog");
+        // adding rat to the animal list as the 3rd value
         animalList.add("rat");
+        // adding bird to the animal list as the 4th value
         animalList.add("bird");
-
+        // the for loop with the new way of knowing to read the list
         for (String i : animalList) {
+            // printing each value of the animal list starting from index 0 on a new line after each iteration
             System.out.println(i);
         }
     }
