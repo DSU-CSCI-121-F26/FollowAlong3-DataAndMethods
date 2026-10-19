@@ -14,6 +14,24 @@ package part12;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
-public class ForEachLoop {
+import java.util.ArrayList;
 
+public class ForEachLoop {
+    public static void main(String[] args) {
+        String[] animals = {"cat", "dog", "rat", "bird"};
+
+        for (String i : animals) {
+            System.out.println(i);
+        }
+        ArrayList<String> animalList = new ArrayList<String>();
+        animalList.add("cat");
+        animalList.add("dog");
+        animalList.add("rat");
+        animalList.add("bird");
+
+        for (String i : animalList) {
+            System.out.println(i);
+        }
+
+    }
 }

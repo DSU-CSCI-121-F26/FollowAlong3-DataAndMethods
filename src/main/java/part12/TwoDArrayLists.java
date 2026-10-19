@@ -14,6 +14,37 @@ package part12;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+import java.util.ArrayList;
+
 public class TwoDArrayLists {
+    public static void main(String[] args) {
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("pasta");
+        bakeryList.add("garlic bread");
+        bakeryList.add("donuts");
+
+        ArrayList<String> produceList = new ArrayList<String>();
+        produceList.add("tomatoes");
+        produceList.add("zucchini");
+        produceList.add("peppers");
+
+        ArrayList<String> drinksList = new ArrayList<String>();
+        drinksList.add("soda");
+        drinksList.add("coffee");
+
+        System.out.println(bakeryList);
+        System.out.println(bakeryList.get(0));
+        System.out.println(drinksList);
+
+        ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+        System.out.println(groceryList);
+
+        System.out.println(groceryList.get(0));
+        System.out.println(groceryList.get(0).get(0));
+        System.out.println(groceryList.get(2).get(1));
+    }
 
 }

@@ -14,6 +14,28 @@ package part12;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+import java.util.ArrayList;
+
 public class ArrayLists {
+    public static void main(String[] args) {
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("pizza");
+        food.add("hamburger");
+        food.add("hotdog");
+
+        for (int i = 0; i < food.size(); i++) {
+            System.out.println(food.get(i));
+        }
+        food.set(0, "sushi");
+        System.out.println(food);
+
+        food.remove(2);
+        System.out.println(food);
+
+        food.clear();
+        System.out.println(food);
+
+
+    }
 
 }
