@@ -16,18 +16,18 @@ package part11;
 
 public class WrapperClasses {
     public static void main(String[] args) {
-                // Declare a Boolean wrapper class variable and assign it the value true[span_4](start_span)[span_4](end_span)
+                // Declare a Boolean wrapper class variable and assign it the value true
                 Boolean a = true;
 
                 // Check if the wrapper object 'a' equals true explicitly using standard comparison
                 if (a == true) {
-                    // Print out the confirmation text if the condition is met[span_5](start_span)[span_5](end_span)
+                    // Print out the confirmation text if the condition is met
                     System.out.println("This is true");
                 }
 
                 // Check the boolean wrapper variable directly in the condition via unboxing
                 if (a) {
-                    // Print out the confirmation text if the unboxed value is true[span_6](start_span)[span_6](end_span)
+                    // Print out the confirmation text if the unboxed value is true
                     System.out.println("This is true");
                 }
             }

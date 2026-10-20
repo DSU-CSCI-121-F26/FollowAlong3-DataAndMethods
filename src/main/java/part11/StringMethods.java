@@ -17,7 +17,7 @@ package part11;
 public class StringMethods {
     public static void main(String[] args) {
 
-        // Declare a String variable named name and assign it the value "Bro"
+        // Declare a String variable named name and assign it the value "Bro".
         String name = "Bro";
 
         // Check if the name string is exactly equal to "Bro" (case-sensitive)
@@ -65,14 +65,14 @@ public class StringMethods {
         // Print the lowercase version of the string (bro)
         System.out.println(lowerResult);
 
-        // Declare a new String variable containing leading and trailing whitespace characters[span_0](start_span)[span_0](end_span)
+        // Declare a new String variable containing leading and trailing whitespace charactersgit add
         String spaced = " Bro ";
-        // Print the spaced string wrapped in brackets so the extra spaces are visible[span_1](start_span)[span_1](end_span)
+        // Print the spaced string wrapped in brackets so the extra spaces are visible
         System.out.println("[" + spaced + "]");
 
-        // Remove any leading and trailing whitespace from the spaced string[span_2](start_span)[span_2](end_span)
+        // Remove any leading and trailing whitespace from the spaced string
         String trimResult = spaced.trim();
-        // Print the trimmed string wrapped in brackets[span_3](start_span)[span_3](end_span)
+        // Print the trimmed string wrapped in brackets
         System.out.println("[" + trimResult + "]");
 
         // Replace all instances of the letter "o" with the letter "a" in the name string
