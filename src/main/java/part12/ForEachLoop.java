@@ -39,7 +39,7 @@ public class ForEachLoop {
 
         // Use a for-each loop to iterate through every element stored in the animalList
         for (String animal : animalList) {
-            // Print each animal string from the ArrayList on a new line
+            // Print each animal string from the ArrayList on a new line.
             System.out.println(animal);
         }
     }

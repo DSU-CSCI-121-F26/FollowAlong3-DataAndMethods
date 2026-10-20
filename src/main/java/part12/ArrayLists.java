@@ -45,7 +45,7 @@ public class ArrayLists {
 
         // Remove all elements from the ArrayList, making it completely empty
         food.clear();
-        // Print the empty ArrayList, which will output empty brackets
+        // Print the empty ArrayList, which will output empty brackets.
         System.out.println(food);
     }
 }

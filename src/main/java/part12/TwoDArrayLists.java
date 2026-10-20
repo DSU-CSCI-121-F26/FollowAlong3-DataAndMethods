@@ -64,7 +64,7 @@ public class TwoDArrayLists {
         System.out.println(masterList.get(0));
     // Print the first item of the first inner list ("pasta")
         System.out.println(masterList.get(0).get(0));
-    // Print the second item of the third inner list ("coffee")
+    // Print the second item of the third inner list ("coffee").
         System.out.println(masterList.get(2).get(1));
 }
 }
