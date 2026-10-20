@@ -15,17 +15,25 @@ package part10;
 
 public class ArrayBasics {
     public static void main(String[] args) {
-        String[]  cars = new String[3];
+        // Create a new string array designed to hold a maximum of 3 items
+        String[] cars = new String[3];
+        // Assign the string "Camaro" to index position 0 of the array
         cars[0] = "Camaro";
+        // Assign the string "Corvette" to index position 1 of the array
         cars[1] = "Corvette";
+        // Assign the string "Tesla" to index position 2 of the array
         cars[2] = "Tesla";
+        // Print the element stored at index 0 to the console
         System.out.println(cars[0]);
+        // Print the element stored at index 1 to the console
         System.out.println(cars[1]);
+        // Print the element stored at index 2 to the console
         System.out.println(cars[2]);
-        for(int i = 0; i < cars.length; i++) {
+        // Set up a for loop to iterate through every index of the array from start to finish
+        for (int i = 0; i < cars.length; i++) {
+            // Print out the value of the array element at the current index i
             System.out.println(cars[i]);
         }
-
     }
-
 }
+
