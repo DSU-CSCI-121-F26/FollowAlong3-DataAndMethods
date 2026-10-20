@@ -14,5 +14,17 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class TwoDArrays {
-
+    public static void main(String[] args) {
+        String[][] twoDGrid = {
+                {"Camaro", "Corvette", "Silverado"},
+                {"Mustang", "Ranger", "F-150"},
+                {"Ferrari", "Lambo", "Tesla"}
+        };
+        for (int i = 0; i < twoDGrid.length; i++) {
+            for (int j = 0; j < twoDGrid[i].length; j++) {
+                System.out.print(twoDGrid[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }
