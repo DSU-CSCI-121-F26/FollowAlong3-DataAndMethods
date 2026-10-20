@@ -13,26 +13,37 @@ package part12;
 //
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
-
+//Import the ArrayList class
 import java.util.ArrayList;
-
+//Create a class called ArrayLists
 public class ArrayLists {
+    //Creates a main method of ArrayList
     public static void main(String[] args) {
+        //Creates an arraylist of strinsg called food
         ArrayList<String> food = new ArrayList<String>();
+        //Add these elements into the arrayList
         food.add("pizza");
         food.add("hamburger");
         food.add("hotdog");
 
+        //loop through the list using a normal for lop
         for (int i = 0; i < food.size(); i++) {
+            //print the item at index 1
             System.out.println(food.get(i));
         }
+        //Replace teh item at index 0 to Sushi
         food.set(0, "sushi");
+        //print the updated lisy
         System.out.println(food);
 
+        //Remove the item at index 2
         food.remove(2);
+        //print the updatedList
         System.out.println(food);
 
+        //Clear teh entire list
         food.clear();
+        //print the now empty list
         System.out.println(food);
 
 
