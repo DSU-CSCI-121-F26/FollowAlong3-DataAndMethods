@@ -13,12 +13,20 @@ public class Challenge {
     // initials("jordan", "smith") should return "J.S."
     // initials("Ada", "Lovelace") should return "A.L."
     public static String initials(String first, String last) {
-        return "";   // YOUR CODE
+        return first.toUpperCase().charAt(0) + "." + last.toUpperCase().charAt(0) + ".";
     }
+
 
     // swapEnds("code") should return "eodc"
     // swapEnds("a")    should return "a"    (shorter than 2 letters: give it back unchanged)
     public static String swapEnds(String s) {
-        return "";   // YOUR CODE
+        if (s.length() < 2) {
+            return s;
+        }
+        char firstChar = s.charAt(0);
+        char lastChar = s.charAt(s.length() - 1);
+        String middle = s.substring(1, s.length() - 1);
+
+        return lastChar + middle + firstChar;
     }
 }
