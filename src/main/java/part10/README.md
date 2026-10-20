@@ -586,8 +586,8 @@ them.
 Fill this in before you push. Type your answers after the colons.
 
 ```
-Started:
-Finished:
+Started:Monday October 19 
+Finished:Tuesday, October 20
 The line that took me the longest:
 ```
 
