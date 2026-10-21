@@ -17,27 +17,42 @@ package part13;
 public class Methods {
     // the start of the program
     public static void main(String[] args) {
+        // create a String variable called name and store the text "Bro" in it
         String name = "Bro";
+        // create an int variable called age and store the number 21 in it
         int age = 21;
 
+        // call the hello method, passing name and age as arguments
         hello(name, age);
 
+        // create an int variable x and set it to 3
         int x = 3;
+        // create an int variable y and set it to 4
         int y = 4;
 
+        // call add with x and y, and store the returned value (7) in z
         int z = add(x, y);
+        // print the value of z (7) to the console
         System.out.println(z);
+        // call add again and print its returned value (7) directly
         System.out.println(add(x, y));
 
+        // call add, but the returned value (7) is discarded, so nothing visible happens
         add(x, y);
+
     }
 
-   static void hello(String name, int age){
-            System.out.println("Hello " + name);
-            System.out.println("You are " + age);
-        }
+    // define a method named hello that takes a String and an int and returns nothing (void)
+    static void hello(String name, int age) {
+        // print "Hello " joined with the name parameter (e.g. "Hello Bro")
+        System.out.println("Hello " + name);
+        // print "You are " joined with the age parameter (e.g. "You are 21")
+        System.out.println("You are " + age);
+    }
 
-    static int add ( int x, int y){
+    // define a method named add that takes two ints and returns an int
+    static int add(int x, int y) {
+        // add the two parameters together and send the result back to the caller
         return x + y;
     }
 }
