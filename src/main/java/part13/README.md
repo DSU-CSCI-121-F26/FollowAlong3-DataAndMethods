@@ -590,9 +590,9 @@ them.
 Fill this in before you push. Type your answers after the colons.
 
 ```
-Started:
-Finished:
-The line that took me the longest:
+Started: Wednesday October 21
+Finished:  Wednesday October 21
+The line that took me the longest: closerTo10
 ```
 
 ---
