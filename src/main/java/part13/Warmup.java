@@ -13,6 +13,19 @@ package part13;
 // Part 12's B1 used an ArrayList, so you need the import line too:
 // type  import java.util.ArrayList;  under the package line.
 
-public class Warmup {
+import java.util.ArrayList;
 
+public class Warmup {
+    public static void main(String[] args) {
+        ArrayList<Integer> scores = new ArrayList<Integer>();
+        scores.add(90);
+        scores.add(75);
+        scores.add(88);
+        int sum = 0;
+        for (int s : scores) {
+            sum = sum + s;
+        }
+        System.out.println("Total: " + sum);
+
+    }
 }

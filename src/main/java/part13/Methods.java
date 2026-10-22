@@ -15,5 +15,23 @@ package part13;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class Methods {
+    public static void main(String[] args) {
+        String name = "Bro";
+        int age = 21;
+        hello(name, age);
+        int x =3;
+        int y = 4;
+        int z = add(x,y);
+        System.out.println(z);
+        System.out.println(add(x,y));
+
+    }
+    static void hello(String title, int age) {
+        System.out.println("Hello " + title);
+        System.out.println("You are "+ age);
+    }
+    static int add(int x, int y) {
+       return x+y;
+    }
 
 }
