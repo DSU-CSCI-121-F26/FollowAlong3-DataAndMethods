@@ -10,5 +10,65 @@ package part14;
 // Your extra methods (twice, area) go INSIDE this class, but OUTSIDE main.
 
 public class Stretch {
+    public static void main(String [] args) {
+        // prints out the first rwice variation the int on so output 6
+        System.out.println(twice(3));
+        // runs the 2nd twice method of double an outputs 5
+        System.out.println(twice(2.5));
+        // runs the 3rd sting method and combines the string and outputs abab
+        System.out.println(twice("ab"));
+        // idk
+        System.out.printf("[%5d]\n", 42);
+        // idk
+        System.out.printf("[%-5d]\n", 42);
+        // deletes every nunber after the 1 and just outputs 3.1
+        System.out.printf("[%.1f]\n", 3.14159);
+        // puts a comma in between every 3 numbers
+        System.out.printf("[%,d]\n", 1234567);
+
+        String item = "Pizza";
+        int qty = 2;
+        double price = 12.5;
+        System.out.printf("%-10s x%d  $%.2f\n", item, qty, price * qty);
+
+        System.out.println("Sqaure: " + area(4));
+        System.out.println("Rectangle: " + area(22, 5));
+        System.out.printf("Circle: %.2f\n", area(6.5));
+
+        System.out.printf("%-10s %3s %8s\n", "Item", "Qty", "Cost");
+        System.out.printf("%-10s %3d %8.2f\n", "Pizza", 2, 25.00);
+        System.out.printf("%-10s %3d %8.2f\n", "Wings", 10, 12.99);
+        System.out.printf("%-10s %3d %8.2f\n", "Soda", 3, 4.50);
+        System.out.printf("%-10s %3s %8.2f\n", "TOTAL", "", 42.49);
+
+    }
+
+    static int twice(int n) {
+        return n * 2;
+    }
+
+    static double twice(double n) {
+        return n * 2;
+    }
+
+    static String twice(String s) {
+        return s + s;
+    }
+
+    static int area(int side) {
+        return side * side;
+    }
+
+    static int area(int width, int height) {
+        return width * height;
+    }
+
+    static double area(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+
+
+
 
 }
