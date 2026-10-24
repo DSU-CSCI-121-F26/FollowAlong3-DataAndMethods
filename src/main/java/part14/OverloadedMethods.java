@@ -17,47 +17,47 @@ package part14;
 
 public class OverloadedMethods {
     public static void main(String[] args) {
-
+        // calling the first add method that adds 1 and 2 and outputs 3 and sout attached with it
         int x = add(1, 2);
         System.out.println(x);
-
+        // calling the second add method that adds 1 2 and 3 and outputs 6 and sout attached with it
         int y = add(1, 2, 3);
         System.out.println(y);
-
+        // calling the third add method that adds 1 2 3 and 4 and outputs 10 and sout attached with it
         int z = add(1, 2, 3, 4);
         System.out.println(z);
-
+        // calling the first double method that adds 1.0 2.0 3.0 and 4.0 and outputs 10.0 and sout attached with it
         double d = add(1.0, 2.0, 3.0, 4.0);
         System.out.println(d);
 
 
     }
-
+    // the first instance of the add methods that just adds 2 int values
     static int add(int a, int b) {
         System.out.println("This is overload method #1");
         return a + b;
     }
-
+    // the second instance of the add methods that adds 3 int values
     static int add(int a, int b, int c) {
         System.out.println("This is overloaded method #2");
         return a + b + c;
     }
-
+    // the third  instance of the add methods that adds 4 int values
     static int add(int a, int b, int c, int d) {
         System.out.println("This is overloaded method #3");
         return a + b + c + d;
     }
-
+    // the first instance of the double add methods that just adds 2 double values
     static double add(double a, double b) {
         System.out.println("This is overloaded method #4");
         return a + b;
     }
-
+    // the second instance of the double add methods that adds 3 double values
     static double add(double a, double b, double c) {
         System.out.println("This is overloaded method #5");
         return a + b + c;
     }
-
+    // the third instance of the double add methods that adds 4 double values
     static double add(double a, double b, double c, double d) {
         System.out.println("This is overloaded method #6");
         return a + b + c + d;
