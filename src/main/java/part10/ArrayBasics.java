@@ -14,5 +14,29 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ArrayBasics {
+    public static void main(String[] args) {
+        // declaring the array naming it cars and letting it be know it is a string array with 3 values
+        String[] cars = new String[3];
+        // the first value stored in the array being a mustang
+        cars[0] = "Mustang";
+        // the second value stored in the array being a corvette
+        cars[1] = "Corvette";
+        // the last value stored in the array being a tesla
+        cars[2] = "Tesla";
+        // outputting the first value in the array which all arrays start at 0
+        System.out.println(cars[0]);
+        // outputting the second value in the array
+        System.out.println(cars[1]);
+        // outputting the third value in the array
+        System.out.println(cars[2]);
+        // a for loop that reads and prints out all the array values by going until it reaches the end of the array
+        // and it prints out all the array values from 0-2
+        for (int i = 0; i < cars.length; i++) {
+            // souts the array in order on a new line everytime
+            System.out.println(cars[i]);
+        }
+
+
+    }
 
 }
