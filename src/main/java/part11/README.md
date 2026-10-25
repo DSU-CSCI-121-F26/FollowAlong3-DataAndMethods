@@ -600,9 +600,9 @@ them.
 Fill this in before you push. Type your answers after the colons.
 
 ```
-Started:
-Finished:
-The line that took me the longest:
+Started: October 20th Tuesday
+Finished: October 20th Tuesday
+The line that took me the longest: understanding the swapEnds
 ```
 
 ---

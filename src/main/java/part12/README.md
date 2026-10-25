@@ -608,9 +608,9 @@ them.
 Fill this in before you push. Type your answers after the colons.
 
 ```
-Started:
-Finished:
-The line that took me the longest:
+Started: Tuesday, October 20th
+Finished: Tuesday, October 20th
+The line that took me the longest: the spread method - line 39
 ```
 
 ---

@@ -18,7 +18,15 @@ public class Challenge {
     // endsWith(new int[] {1, 2, 9}, 9)  should return true   (last is 9)
     // endsWith(new int[] {1, 5, 3}, 5)  should return false  (5 is only in the middle)
     public static boolean endsWith(int[] nums, int target) {
-        return false;   // YOUR CODE
+        /* check first and last index if the target is not there return false
+        if it is return true
+         */
+        int numsLength = nums.length - 1;
+
+        if (target == nums[0] ||target == nums[numsLength] ){
+            return true;
+        }
+        return false;
     }
 
     // Return the total: all the numbers in the array added up.
@@ -26,6 +34,12 @@ public class Challenge {
     // total(new int[] {10})       should return 10
     // total(new int[] {})         should return 0   (an empty array adds up to 0)
     public static int total(int[] nums) {
-        return 0;   // YOUR CODE
+        // make a for loop adding the number at the beginning to a result until its done
+        int result = 0;
+
+        for (int i = 0; i < nums.length;i++){
+            result += nums[i];
+        }
+        return result;
     }
 }
