@@ -586,9 +586,9 @@ shows you how to set it up (about 5 minutes). You don't have to wait for class.
 Fill this in before you push. Type your answers after the colons.
 
 ```
-Started:
-Finished:
-The line that took me the longest:
+Started: Sunday, October 25
+Finished: Sunday, October 25
+The line that took me the longest: stretch B3
 ```
 
 ---
