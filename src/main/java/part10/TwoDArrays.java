@@ -14,5 +14,22 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class TwoDArrays {
-
+    public static void main(String[] args) {
+        // Declare and initialize a 2D string array containing rows of vehicle names
+        String[][] twoDGrid = {
+                {"Camaro", "Corvette", "Silverado"},
+                {"Mustang", "Ranger", "F-150"},
+                {"Ferrari", "Lambo", "Tesla"}
+        };
+        // Loop through each row of the 2D array starting from index 0
+        for (int i = 0; i < twoDGrid.length; i++) {
+            // Loop through each individual column item within the current row
+            for (int j = 0; j < twoDGrid[i].length; j++) {
+                // Print the current car name with a trailing space on the same line
+                System.out.print(twoDGrid[i][j] + " ");
+            }
+            // Print an empty line to jump to the next row once a row finishes
+            System.out.println();
+        }
+    }
 }

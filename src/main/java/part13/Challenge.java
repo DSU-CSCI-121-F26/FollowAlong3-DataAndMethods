@@ -9,17 +9,44 @@ package part13;
 // Change ONLY the lines marked YOUR CODE. Do not change the test file.
 
 public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(sign(5));
+        System.out.println(sign(-3));
+        System.out.println(sign(0));
+        System.out.println(closerTo10(8, 13));
+        System.out.println(closerTo10(13, 8));
+        System.out.println(closerTo10(8, 12));
+        System.out.println(closerTo10(-5, 20));
+
+    }
 
     // sign(5)  should return "positive"
     // sign(-3) should return "negative"
     // sign(0)  should return "zero"
     public static String sign(int n) {
-        return "";   // YOUR CODE
+        if (n > 0) {
+            return "positive";
+        } else if (n < 0) {
+            return "negative";
+        } else {
+            return "zero";
+        }
+
     }
 
     // closerTo10(8, 13) should return 8    (8 is 2 away from 10, 13 is 3 away)
     // closerTo10(8, 12) should return 0    (a tie: both are 2 away)
     public static int closerTo10(int a, int b) {
-        return 0;   // YOUR CODE
+        int distanceA = Math.abs(a - 10);
+        int distanceB = Math.abs(b - 10);
+
+        if (distanceA < distanceB) {
+            return a;
+        } else if (distanceB < distanceA) {
+            return b;
+        } else {
+            return 0;
+        }
+
     }
 }

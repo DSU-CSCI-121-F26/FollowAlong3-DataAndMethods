@@ -15,5 +15,22 @@ package part11;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class WrapperClasses {
+    public static void main(String[] args) {
+                // Declare a Boolean wrapper class variable and assign it the value true
+                Boolean a = true;
 
-}
+                // Check if the wrapper object 'a' equals true explicitly using standard comparison
+                if (a == true) {
+                    // Print out the confirmation text if the condition is met
+                    System.out.println("This is true");
+                }
+
+                // Check the boolean wrapper variable directly in the condition via unboxing
+                if (a) {
+                    // Print out the confirmation text if the unboxed value is true
+                    System.out.println("This is true");
+                }
+            }
+        }
+
+

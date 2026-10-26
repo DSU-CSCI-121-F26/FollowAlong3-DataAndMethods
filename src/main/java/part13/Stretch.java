@@ -10,5 +10,65 @@ package part13;
 // underneath it — is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+        int x = 5;
+        change(x);
+        System.out.println(x);
+        System.out.println(twice(x));
+        System.out.println(twice(twice(x)));
+        greet("Sam", 3);
+        System.out.println(square(4));
+        System.out.println(square(9));
+        System.out.println(average(90, 80, 85));
+        System.out.println(average(1, 2, 2));
+        System.out.println(rating(5));
+        System.out.println(rating(4));
+        System.out.println(rating(2));
+        System.out.println(rating(0));
+    }
+
+    static void change(int x) {
+        x = 100;
+    }
+
+    static int twice(int n) {
+        return n * 2;
+
+    }
+
+ static int square(int n) {
+    return n * n;
+}
+    static void greet(String who, int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.print("Hi " + who + "! ");
+        }
+        System.out.println();
+        /*
+        100    I was wrong here for thinking the change method made x 100 permanently going forward
+        200
+        400
+        Hi Sam!  Hi Sam!  Hi Sam!
+         */
+    }
+    static double average(int x, int y, int z) {
+        return (x + y + z) / 3.0;
+    }
+
+     static String rating(int stars) {
+         if (stars == 5) {
+             return "Amazing";
+         } else if (stars == 3 || stars == 4) {
+             return "Good";
+         } else if (stars == 1 || stars == 2) {
+             return "Bad";
+         } else {
+             return "invalid";
+         }
+     }
+
+
+
+
 
 }
