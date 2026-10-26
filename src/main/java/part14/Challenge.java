@@ -9,20 +9,24 @@ package part14;
 // Change only the lines marked YOUR CODE.
 
 public class Challenge {
-
+    public static void main(String[] args) {
+        System.out.println(tag("hi"));
+        System.out.println(tag("h1", "Menu"));
+        System.out.println(money(3.5));
+    }
     // Wrap text in an HTML tag with the given name.
     // tag("b", "hi")     should return "<b>hi</b>"
     // tag("i", "Yay")    should return "<i>Yay</i>"
     // tag("h1", "Menu")  should return "<h1>Menu</h1>"
     public static String tag(String name, String text) {
-        return "";   // YOUR CODE
+        return "<" + name + ">" + text + "</" + name + ">";
     }
 
     // The same name, but only ONE input. Always use the tag "b".
     // tag("hi")    should return "<b>hi</b>"
     // tag("Wow")   should return "<b>Wow</b>"
     public static String tag(String text) {
-        return "";   // YOUR CODE
+        return tag("b", text);
     }
 
     // Turn a number into money: a dollar sign and exactly 2 digits after the point.
@@ -32,6 +36,6 @@ public class Challenge {
     // Hint: String.format works exactly like printf, but it RETURNS the text
     //       instead of printing it.
     public static String money(double amount) {
-        return "";   // YOUR CODE
+        return String.format("$%.2f", amount);
     }
 }
