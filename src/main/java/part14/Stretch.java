@@ -10,5 +10,67 @@ package part14;
 // Your extra methods (twice, area) go INSIDE this class, but OUTSIDE main.
 
 public class Stretch {
+    public static void main(String[] args) {
+        /* My Guess:
+        6
+        4.5
+        abab
+        [     42]
+        [42     ]
+        [3.1]
+        [1,234,567
+         */
+        System.out.println(twice(3));
+        System.out.println(twice(2.5));
+        System.out.println(twice("ab"));
+        System.out.printf("[%5d]\n", 42);
+        System.out.printf("[%-5d]\n", 42);
+        System.out.printf("[%.1f]\n", 3.14159);
+        System.out.printf("[%,d]\n", 1234567);
+        //B1
+        String item = "Pizza";
+        int qty = 2;
+        double price = 12.5;
+        System.out.printf("%-10s x%d  $%.2f\n", item, qty, price * qty);
 
+        //B2
+        System.out.printf("Square:    %d\n", area(4));
+        System.out.printf("Rectangle: %d\n", area(3, 5));
+        System.out.printf("Circle:    %.2f\n", area(2.0));
+
+        //B3
+        System.out.printf("%-10s %3s %8s%n", "Item", "Qty", "Cost");
+
+        System.out.printf("%-10s %3d %8.2f%n", "Pizza", 2, 25.00);
+        System.out.printf("%-10s %3d %8.2f%n", "Wings", 10, 12.99);
+        System.out.printf("%-10s %3d %8.2f%n", "Soda", 3, 4.50);
+
+        System.out.printf("%-10s %3s %8.2f%n", "TOTAL", "", 42.49);
+    }
+    // Area of a square
+    static int area(int side) {
+        return side * side;
+    }
+
+    // Area of a rectangle
+    static int area(int width, int height) {
+        return width * height;
+    }
+
+    // Area of a circle
+    static double area(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+    static int twice(int n) {
+        return n * 2;
+    }
+
+    static double twice(double n) {
+        return n * 2;
+    }
+
+    static String twice(String s) {
+        return s + s;
+    }
 }

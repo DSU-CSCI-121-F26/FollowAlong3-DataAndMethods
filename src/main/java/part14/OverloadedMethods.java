@@ -15,37 +15,85 @@ package part14;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+// Create a class called OverloadedMethods
 public class OverloadedMethods {
+
+    // Main method - program starts here
     public static void main(String[] args) {
-    int y = add(1,2,3);
+
+        // Call the add method that takes 3 ints
+        // Store the returned value in y
+        int y = add(1, 2, 3);
+
+        // Print the value of y
         System.out.println(y);
 
-    int z = add(1,2,3,4);
+        // Call the add method that takes 4 ints
+        // Store the returned value in z
+        int z = add(1, 2, 3, 4);
+
+        // Print the value of z
         System.out.println(z);
 
-    double d = add(1.0,2.0,3.0,4.0);
+        // Call the add method that takes 4 doubles
+        // Store the returned value in d
+        double d = add(1.0, 2.0, 3.0, 4.0);
+
+        // Print the value of d
         System.out.println(d);
     }
+
+    // Overloaded method #1
+    // Accepts 3 int parameters
     static int add(int a, int b, int c) {
+
+        // Print which overloaded method was called
         System.out.println("This is overloaded method #1");
-        return a + b;
-    }
-    static int add(int a, int b,int c,int d) {
-        return a + b + c + d;
-    }
-    static double add(double a, double b) {
-        System.out.println("This is overloaded method #4");
+
+        // Return the sum of a and b
+        // NOTE: c is not being used here
         return a + b;
     }
 
+    // Overloaded method #2
+    // Accepts 4 int parameters
+    static int add(int a, int b, int c, int d) {
+
+        // Return the sum of all 4 integers
+        return a + b + c + d;
+    }
+
+    // Overloaded method #3
+    // Accepts 2 double parameters
+    static double add(double a, double b) {
+
+        // Print which overloaded method was called
+        System.out.println("This is overloaded method #4");
+
+        // Return the sum of the two doubles
+        return a + b;
+    }
+
+    // Overloaded method #4
+    // Accepts 3 double parameters
     static double add(double a, double b, double c) {
+
+        // Print which overloaded method was called
         System.out.println("This is overloaded method #5");
+
+        // Return the sum of the three doubles
         return a + b + c;
     }
 
+    // Overloaded method #5
+    // Accepts 4 double parameters
     static double add(double a, double b, double c, double d) {
+
+        // Print which overloaded method was called
         System.out.println("This is overloaded method #6");
+
+        // Return the sum of the four doubles
         return a + b + c + d;
     }
 
-}
+} // End of class
