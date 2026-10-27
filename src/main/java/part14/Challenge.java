@@ -35,3 +35,5 @@ public class Challenge {
         return "$" + String.format("%.2f", amount);   // YOUR CODE
     }
 }
+//Completed at 10-27-2026
+//Hardest part was the Stretch B2
