@@ -12,5 +12,12 @@ package part14;
 // You will need to type the main method yourself.
 
 public class Warmup {
+    public static void main(String[] args) {
+        System.out.println(square(4));
+        System.out.println(square(9));
+    }
+    static int square(int n){
+        return n*n;
+    }
 
 }

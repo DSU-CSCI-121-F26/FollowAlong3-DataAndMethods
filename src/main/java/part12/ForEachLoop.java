@@ -14,6 +14,31 @@ package part12;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+import java.util.ArrayList;
+// A public class called ForEachLoop
 public class ForEachLoop {
+    //The main method
+    public static void main(String[] args) {
+        //Creates A string of an array of animals
+        String[] animals = {"cat", "dog", "rat", "bird"};
+        //A for each loop that goes through each iteration of String
+        for (String i : animals) {
+            //print the current animal stores in i
+            System.out.println(i);
+        }
+        //Creates an Array list of strings called animalList
+        ArrayList<String> animalList = new ArrayList<String>();
+        //Adds the animales in each arrau list
+        animalList.add("cat");
+        animalList.add("dog");
+        animalList.add("rat");
+        animalList.add("bird");
 
+        //Creates a for each loop that goes through each element in the arrayList
+        for (String i : animalList) {
+            //print the current animals in the arraylist
+            System.out.println(i);
+        }
+
+    }
 }

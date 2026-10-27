@@ -12,7 +12,25 @@ package part10;
 //
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
-
+//A public class called Array Basics
 public class ArrayBasics {
+    //The main method what runs the program
+    public static void main(String[] args) {
+        //Creates an array of strings with a variable called cars
+        String[] cars = new String[3];
+        //The name of each index of the array using a string
+        cars[0] = "Camaro";
+       cars[1] = "Corvette";
+        cars[2] = "Tesla";
+        //Prints each array index
+        System.out.println(cars[0]);
+        System.out.println(cars[1]);
+        System.out.println(cars[2]);
+        //The for loop iterates over each array without printing manually using cars.length
+        for (int i = 0; i < cars.length; i++) {
+            //prints each array index
+            System.out.println(cars[i]);
+        }
+    }
 
 }

@@ -12,5 +12,11 @@ package part12;
 // You will need to type the main method yourself. That is part of the practice.
 
 public class Warmup {
-
+    public static void main(String[] args) {
+        String city = "  Dover  ";
+        String clean = city.trim();
+        System.out.println(clean.toUpperCase());
+        System.out.println(clean.length());
+        System.out.println(clean.charAt(0));
+    }
 }
