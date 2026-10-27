@@ -16,5 +16,29 @@ package part14;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class Printf {
+    public static void main(String[] args) {
+        System.out.printf("This is a format string %d\n", 123);
+        boolean myBoolean = true;
+        char myChar = '@';
+        String myString = "Bro";
+        int myInt = 50;
+        double myDouble = 1000;
+        System.out.printf("%b\n", myBoolean);
+        System.out.printf("%c\n", myChar);
+        System.out.printf("%s\n", myString);
+        System.out.printf("%d\n", myInt);
+        System.out.printf("%f\n", myDouble);
+        System.out.printf("Hello %10s\n", myString);System.out.printf("Hello %-10s!\n", myString);
+        System.out.printf("You have this much money %f\n", myDouble);
+        System.out.printf("You have this much money %.2f\n", myDouble);
+        System.out.printf("You have this much money %.1f\n", myDouble);
+        System.out.printf("You have this much money %-20f!\n", myDouble);
+        System.out.printf("You have this much money %20f!\n", myDouble);
+        System.out.printf("You have this much money %+f\n", myDouble);
+        System.out.printf("You have this much money %+f\n", -myDouble);
+        System.out.printf("You have this much money %020f\n", myDouble);
+        System.out.printf("You have this much money %,f\n", myDouble);
+
+    }
 
 }
